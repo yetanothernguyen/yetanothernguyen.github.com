@@ -1,0 +1,45 @@
+---
+layout: post
+title: Notes 20110621
+---
+
+h1. {{ page.title }}
+
+p(meta). 21 June 2011
+
+h2. enumerated_attribute gem
+
+Support enumerated attribute for ActiveRecord. Enforce constraint and view form helpers
+
+h2. RSpec model matchers (accept_valuers_for customer matcher)
+
+<p>
+{% highlight ruby %}
+it { should validate_presence_of(:username) }
+it { should accept_values_for(:email, "user@example.com") }
+it { should_not accept_values_for(:email, "invalid", "a@b", "a@", "a@.com") }
+{% endhighlight %}
+</p>
+
+h2. Date parsing
+
+<p>
+{% highlight ruby %}
+Date.strptime("11/19/1983", "%m/%d/%Y")
+{% endhighlight %}
+</p>
+
+h2. Rails 3 sexy validations
+
+<p>
+{% highlight ruby %}
+validates :username, :presence => true, 
+			:uniqueness => true, 
+			:length => { :within => 3..18 }, 
+			:format => { :with => /^[a-zA-Z0-9\-_]*$/ }
+{% endhighlight %}
+</p>
+
+h2. Sprocket is buggy
+
+Not working when including script within a subdirectory of a load path

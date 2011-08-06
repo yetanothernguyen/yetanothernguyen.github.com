@@ -1,0 +1,34 @@
+---
+layout: post
+title: Notes 20110623
+---
+
+h1. {{ page.title }}
+
+p(meta). 23 June 2011
+
+h2. Debugging
+
+Watch out for silly mistakes. Take some time to read error message to see what it is trying to tell.
+
+h2. MongoDB
+
+Database = Database
+
+Collection = Table
+
+Document = Row
+
+Field = Column
+
+Document has no schema. Collection can contain documents with different set of fields.
+
+h2. Embed vs Reference
+
+Embed when a document is always showed in the context of another. Embed document is different to search for independent of its parent.
+
+Don’t afraid to duplicate data in multiple collections.
+
+h2. Mongoid
+
+Problem with saving associations

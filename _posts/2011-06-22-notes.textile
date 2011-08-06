@@ -1,0 +1,26 @@
+---
+layout: post
+title: Notes 20110622
+---
+
+h1. {{ page.title }}
+
+p(meta). 22 June 2011
+
+h2. Capybara
+
+Capybara is a framework to simulate user interaction on a web app. An alternative to webrat.
+
+h2. Capybara-webkit
+
+It is driver for capybara. It acts as a headless browser. An alternative to celerity, selenium etc.
+
+h2. @javascript
+
+Tag cucumber with @javascript to run it under cucumber’s javascript driver such as capybara-webkit
+
+h2. MySQL vs NoSQL
+
+NoSQL is better suited for web app with a lot of read/write compared to MySQL which usually can handle well infrequent write and frequent read app.
+
+Document = schema-less

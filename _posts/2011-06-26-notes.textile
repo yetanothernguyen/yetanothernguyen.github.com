@@ -1,0 +1,25 @@
+---
+layout: post
+title: Notes 20110626
+---
+
+h1. {{ page.title }}
+
+p(meta). 26 June 2011
+
+h2. Multi-tenancy strategies
+
+Instance partitioning - Each app run on its own application server and database instance
+Role Based Access Control - On view and controllers
+Model partitioning - Scope model by tenants
+Schema partitioning - Namespace access by schema
+
+
+h2. MongoDB is good for schema partitioning
+
+Database/collection creations on the fly.
+No migration.
+
+h2. client_side_validations gem is awesome
+
+Can also create custom validators.
